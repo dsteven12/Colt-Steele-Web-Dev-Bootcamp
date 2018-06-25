@@ -1,10 +1,10 @@
-#The Web Developer Bootcamp
-##Colt Steele's Udemy Course
+# The Web Developer Bootcamp
+## Colt Steele's Udemy Course
 
 Collection of coursework I've done from Colt Steele's Udemy Web Development course
 - Pokemon Data Tables Exercise
 
-##Projects
+## Projects
 
 Color Game
 To-Do List
@@ -12,9 +12,9 @@ Patatap Clone
 YelpCamp
 RESTful Blog
 
-##Concepts & Exercises
+## Concepts & Exercises
 
-###HTML & CSS
+### HTML & CSS
 
 Pokemon Data Tables exercise
 CSS Selector exercise
@@ -23,7 +23,8 @@ Photo Grid CSS exercise
 Photo Grid Bootstrap exercise
 Blog Post CSS exercise
 Landing Page Bootstrap exercise
-###Javascript Many solutions to the exercises can be seen by opening the browser console
+
+### Javascript Many solutions to the exercises can be seen by opening the browser console
 
 Prompt Exercise using prompt() and console.log()
 For Loop Exercises
@@ -33,19 +34,19 @@ Todo List using Arrays
 Array Problem Set
 Movie Database, practice with creating Objects
 
-####Interacting with the DOM
+#### Interacting with the DOM
 
 Intro to Selectors (.getElementById, .getElementByTagName, .querySelector, etc.)
 Selector Exercise
 Adding Listeners (.addElementListener)
 Score Keeper, using .addEventListener, reviewing typecasting, selectors
 
-###jQuery
+### jQuery
 
 Selector Exercise
 jQuery Methods
 
-###Node.js Instead of using C9 as Colt recommended, I create my projects locally
+### Node.js Instead of using C9 as Colt recommended, I create my projects locally
 
 Intro to the Command Line
 Intro to NPM (using simple npm packages catMe & faker)
