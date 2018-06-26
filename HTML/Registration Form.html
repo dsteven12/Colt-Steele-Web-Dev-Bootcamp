@@ -7,51 +7,60 @@
 	<h1>Register</h1>
 	<form>
 		<label for="firstName">First Name:</label>
-		<input id="firstName" type="text" placeholder="John" required>
+		<input id="firstName" name="firstName" type="text" placeholder="John" required>
 		<label for="lastName">Last Name:</label>
-		<input id="lastName" type="text" placeholder="Smith" required>	
+		<input id="lastName" name="lastName" type="text" placeholder="Smith" required>	
 
-		<br>
-		<label for="male">Male</label>
-		<input name="gender id="male" type="radio" value="male">
-		<label for="female">Female</label>
-		<input name="gender" id="female" type="radio" value="female">
-		<label for="other">Other</label>
-		<input name="gender" id="other" type="radio" value="other">
+		<div>
+			<label for="male">Male</label>
+			<input name="gender id="male" type="radio" value="male">
+			<label for="female">Female</label>
+			<input name="gender" id="female" type="radio" value="female">
+			<label for="other">Other</label>
+			<input name="gender" id="other" type="radio" value="other">
+		</div>
 
-		<br>
-		<label for="email">Email:</label>
-		<input id="email" type="email" placeholder="your email" required>
-		<label for="password">Password:</label>
-		<input id="password" type="password" placeholder="your password" minlength="5" maxlength="10" required>
+		<div>
+			<label for="email">Email:</label>
+			<input id="email" name="email" type="email" placeholder="your email" required>
+			<label for="password">Password:</label>
+			<input id="password" name="password" type="password" placeholder="your password" pattern=".{5,10}" required title="Password must be 5 to 10 characters">
+		</div>
 
-		<br>
-		<label for="Birthday">Birthday:</label>
-		<select id="Birthday" name="Month">
-			<option>Jan</option>
-			<option>Feb</option>
-			<option>March</option>
-		</select>
+		<div>
+			<label for="Birthday">Birthday:</label>
+			<select id="Birthday" name="Month">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>March</option>
+			</select>
 
-		<select id="Birthday" name="Day">
-			<option>1</option>
-			<option>2</option>
-			<option>3</option>
-		</select>
 
-		<select id="Birthday" name="Year">
-			<option>2017</option>
-			<option>2018</option>
-			<option>2019</option>
-		</select>
+			<select id="Birthday" name="Day">
+				<option>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+
+			<select id="Birthday" name="Year">
+				<option>Year</option>
+				<option>2017</option>
+				<option>2018</option>
+				<option>2019</option>
+			</select>
+		</div>
 	
 
-		<br>
-		<label for="terms">I agree to the terms and conditions</label>
-		<input id="terms" type="checkbox" required>	
+		<div>
+			<label for="terms">I agree to the terms and conditions</label>
+			<input id="terms" type="checkbox" required>	
+		</div>
 
-		<br>
-		<input type="submit">
+		<div>
+			<input type="submit">
+		</div>
 	</form>	
 
 </body>
