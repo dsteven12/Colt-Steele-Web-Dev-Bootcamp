@@ -28,9 +28,7 @@ p {
 
 /*Make all inputs have a 3px red border*/
 input {
-	border-style: solid;
-	border-width: 3px;
-	border-color: red;
+	border: 3px solid red;
 }
 
 
@@ -41,9 +39,7 @@ input {
 
 /* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
 #special {
-	border-style: solid;
-	border-width: 2px;
-	border-color: rgb(0,0,127);
+	border: 2px solid rgb(0,0,127);
 }
 
 /*Make all the <p>'s that are nested inside of divs 25px font(font-size: 25px)*/
@@ -63,9 +59,7 @@ div:nth-of-type(3) p {
 
 /* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
 div:nth-of-type(3) p:nth-of-type(2) {
-	border-style: solid;
-	border-width: 5px;
-	border-color: white;
+	border: 5px solid white;
 }
 
 /* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
@@ -79,7 +73,7 @@ div:nth-of-type(3) em {
 /*You may need to research some other selectors and properties*/
 
 /*Make all "checked" checkboxes have a left margin of 50px(margin-left: 50px)*/
-input[type="checkbox"]:checked {
+input:checked {
 	margin-left: 50px;
 }
 
