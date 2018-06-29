@@ -9,7 +9,7 @@ var guessingGame = {
 		return this.randNumber;
 	},
 	guessNumber: function() {
-		this.userNumber = Number(prompt(`Guess a number between 0 - 5:`));
+		this.userNumber = Number(prompt(`Guess a number between 1 - 5:`));
 		return this.userNumber;
 	},
 	winnerOrLoser: function(userNum, randNum) {
@@ -20,22 +20,31 @@ var guessingGame = {
 }
 
 var guess = 0;
-var randNum = guessingGame.generateNumber(0, 5);
+var numberOfGuesses = 3;
+var randNum = guessingGame.generateNumber(1, 5);
 
-while(userNum != randNum) {
+while((userNum != randNum) && (guess < 3)) {
 	var userNum = guessingGame.guessNumber(); 
 	guessingGame.winnerOrLoser(userNum, randNum);
 	if(guessingGame.winner === true) {
-		alert("You've won!");
+		alert(`You've won! The number was ${randNum}`);
 	} else {
 		guess++;
+		numberOfGuesses--;
 		if(guess === 1) {
-			alert(`You\'ve guessed ${guess} time. Try again!`);	
-		} else {
-			alert(`You\'ve guessed ${guess} times. Try again!`);
-		}		
-	}
-}
+			alert(`You\'ve guessed ${guess} time. You have ${numberOfGuesses} guesses left!`);	
+		} else { 
+			if(guess === 3) {
+			alert(`You\'ve guessed ${guess} times. You number was ${randNum}.`);	
+			} else {
+			alert(`You\'ve guessed ${guess} times. You have ${numberOfGuesses} guesses left!`);
+			}		
+		}			
+	}	
+}	
+
+
+alert("Refresh the page to play again!");
 
 
 
