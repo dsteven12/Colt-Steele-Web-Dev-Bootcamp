@@ -1,9 +1,26 @@
 var todos = [];
 
 window.setTimeout(function() {
+	/* ----- Main ----- */
 	var input = prompt("What would you like to do?");
 	var index = 0;
 
+	while(input !== "quit") {
+		if(input === "list") {
+			displayTodos();
+		} else if (input === "new") {
+			console.log("Added Todo: " + addTodos());
+		} else if (input === "delete") {
+			console.log("Deleted Todo: " + deleteTodos(index));
+			
+		}
+		input = prompt("What would you like to do")
+	}
+	console.log("-----------------------------------------");
+	console.log("Thanks for trying us out! Come back soon!");
+	console.log("-----------------------------------------");
+
+	/* ----- Function Declarations ----- */
 	const capitalize = ([first,...rest]) => first.toUpperCase() + rest.join('').toLowerCase();
 	
 	function displayTodos() {
@@ -28,18 +45,5 @@ window.setTimeout(function() {
 		return todos;
 	}
 
-	while(input !== "quit") {
-		if(input === "list") {
-			displayTodos();
-		} else if (input === "new") {
-			console.log("Added Todo: " + addTodos());
-		} else if (input === "delete") {
-			console.log("Deleted Todo: " + deleteTodos(index));
-			
-		}
-		input = prompt("What would you like to do")
-	}
-	console.log("-----------------------------------------");
-	console.log("Thanks for trying us out! Come back soon!");
-	console.log("-----------------------------------------");
+	
 }, 500);
