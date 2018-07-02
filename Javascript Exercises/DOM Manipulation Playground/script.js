@@ -1,21 +1,37 @@
+/* --- Main --- */
 var tag = document.querySelector("h1");
 var img1 = document.querySelector("img");
 var lis = document.querySelectorAll("li");
+var button = document.querySelector("#button-background");
+var isToggled = false;
 
 changeH1Background(tag);
 catClicker(img1);
 changeLiBackground(lis);
+changeButtonBackground(button);
+
+/* --- Function Declarations --- */
+// changeH1Background is original code without any refactoring.
+// changeLIBackground is v2 using booleans to do a similar toggle of the background.
+// changeButtonBackground is v3 using the toggle function.
+
+function changeButtonBackground(button) {
+	button.addEventListener("click", function() {
+		document.body.classList.toggle('purple');
+	});
+}
 
 function changeLiBackground(lis) {
 	for(var i = 0; i < lis.length; i++) {
 		lis[i].addEventListener("click", function() {
-			if(this.style.color === "black") {
-				this.style.color = "purple";
-				this.style.textDecoration = "line-through";
-			} else {
+			if(isToggled) {
 				this.style.color = "black";
 				this.style.textDecoration = "none";
+			} else {
+				this.style.color = "purple";
+				this.style.textDecoration = "line-through";
 			}
+			isToggled = !isToggled;
 		});
 	}	
 }
