@@ -23,40 +23,29 @@ var movies = [
 	},
 ];
 
-// function moviesWatched(movies) {
-// 	movies.forEach(function(movie) {
-// 		buildString(movie);
-// 	});
-
-// 	function buildString(movie) {
-// 		var result = "You have ";
-// 		if(movie.hasWatched) {
-// 			result += "watched ";
-// 		} else {
-// 			result += "not seen ";
-// 			movie.rating = 0;
-// 		}
-// 		console.log(`${result}\"${movie.title}\" - ${movie.rating} stars.`);
-// 	}	
-// } 
-
-function moviesWatchedV2(movies) {
-	for(var i = 0; i < movies.length; i++) {
-		buildString(movies[i]);
-	}
-
-	function buildString(movie) {
+var moviesSeen = {
+	buildString: function(movie) {
 		var result = "You have ";
-		if(movies[i].hasWatched) {
+		if(movie.hasWatched) {
 			result += "watched ";
 		} else {
 			result += "not seen ";
-			movies[i].rating = 0;
+			movie.rating = 0;
 		}
-		console.log(`${result}\"${movies[i].title}\" - ${movies[i].rating} stars.`);
-	}	
+		console.log(`${result}\"${movie.title}\" - ${movie.rating} stars.`);
+	},	
+	moviesWatched: function(movies) {
+		movies.forEach(function(movie) {
+			this.buildString(movie);
+		});
+	},
+	moviesWatchedV2: function(movies) {
+		for(var i = 0; i < movies.length; i++) {
+			this.buildString(movies[i]);
+		}
+	}
 }
 
-moviesWatchedV2(movies);
+moviesSeen.moviesWatchedV2(movies);
 
 		
