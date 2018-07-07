@@ -10,17 +10,12 @@ var p2Btn = document.querySelector('#player2-btn');
 var p1Display = document.querySelector('#p1Display');
 var p2Display = document.querySelector('#p2Display');
 var resetBtn = document.querySelector('#reset-score');
+var topScore = document.querySelector('#top-score');
+var maxScoreDisplay = document.querySelector('#max-score');
 var p1Score = 0;
 var p2Score = 0;
-var maxScore = 5;
+var maxScore = 3;
 var gameOver = false;
-
-resetBtn.addEventListener("click", function() {
-	p1Score = 0;
-	p2Score = 0;
-	p1Display.textContent = p1Score;
-	p2Display.textContent = p2Score;
-});
 
 p1Btn.addEventListener("click", function() {
 	if(!gameOver) {
@@ -44,6 +39,23 @@ p2Btn.addEventListener("click", function() {
 	p2Display.textContent = p2Score;
 });
 
+topScore.addEventListener("change", function() {
+	maxScore = Number(topScore.value);
+	maxScoreDisplay.textContent = maxScore;
+	reset();
+});
 
 
+resetBtn.addEventListener("click", function() {
+	reset();
+});
 
+function reset() {
+	p1Score = 0;
+	p2Score = 0;
+	p1Display.textContent = p1Score;
+	p2Display.textContent = p2Score;
+	p1Display.classList.remove("winner")
+	p2Display.classList.remove("winner")
+	gameOver = false;
+}
