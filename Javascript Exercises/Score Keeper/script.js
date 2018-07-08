@@ -40,7 +40,7 @@ p2Btn.addEventListener("click", function() {
 });
 
 topScore.addEventListener("change", function() {
-	maxScore = Number(topScore.value);
+	maxScore = Number(this.value);
 	maxScoreDisplay.textContent = maxScore;
 	reset();
 });
