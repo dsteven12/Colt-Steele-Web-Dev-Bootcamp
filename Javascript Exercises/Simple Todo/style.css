@@ -1,10 +1,10 @@
-.check {
+.completed {
 	text-decoration-line: line-through;
 	list-style-type: disc;
 }
 
-.background-change {
-	background: yellow;
+.text-color-change {
+	color: blue;
 }
 
 li {

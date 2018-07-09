@@ -6,7 +6,7 @@ highlightSelection(listItem);
 function strikeOut(listItem) {
 	for(var i = 0; i < listItem.length; i++) {
 		listItem[i].addEventListener("click", function() {
-			this.classList.toggle('check');
+			this.classList.toggle('completed');
 		});
 	}
 }	
@@ -14,11 +14,11 @@ function strikeOut(listItem) {
 function highlightSelection(listItem) {
 	for(var i = 0; i < listItem.length; i++) {
 		listItem[i].addEventListener("mouseover", function() {
-			this.style.color = "blue";
+			this.classList.add('text-color-change');
 		});
 
 		listItem[i].addEventListener("mouseout", function() {
-			this.style.color = "black";
+			this.classList.remove('text-color-change');
 		})
 	}
 }
