@@ -1,7 +1,10 @@
 #header {
-	background: #960a1e;
 	color: #fff;
 	text-align: center;
+}
+
+#colorDisplay {
+	
 }
 
 #sub-header {
@@ -10,6 +13,21 @@
 	color: #960a1e;
 }
 
-#color1 {
-	color: blue;
+body {
+	background-color: #232323;
 }
+
+/* Color Game Squares */
+#container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.square {
+	background: purple;
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
