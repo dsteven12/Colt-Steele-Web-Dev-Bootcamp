@@ -8,7 +8,7 @@ var colors = [
 ]
 
 var squares = document.querySelectorAll(".square");
-var pickedColor = colors[3];
+var pickedColor = colors[getRandomInt(0, 6)];
 var colorDisplay = document.getElementById("colorDisplay");
 
 colorDisplay.textContent = pickedColor;
@@ -25,3 +25,8 @@ for(var i = 0; i < squares.length; i++) {
 	});
 }
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+}
