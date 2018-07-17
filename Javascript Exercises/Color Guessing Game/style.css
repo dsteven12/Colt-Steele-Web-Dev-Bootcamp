@@ -1,20 +1,10 @@
-#header {
-	color: #fff;
-	text-align: center;
-}
-
-#colorDisplay {
-	
-}
-
-#sub-header {
-	text-align: center;
-	background: #fff;
-	color: #960a1e;
-}
-
 body {
 	background-color: #232323;
+	color: white;
+}
+
+span {
+	color: white;
 }
 
 /* Color Game Squares */
@@ -24,7 +14,6 @@ body {
 }
 
 .square {
-	background: purple;
 	width: 30%;
 	padding-bottom: 30%;
 	float: left;
