@@ -1,10 +1,20 @@
+h1 {
+	text-align: center;
+}
+
+#sub-header {
+	background-color: white;
+	height: 45px;
+	text-align: center;
+}
+
 body {
 	background-color: #232323;
 	color: white;
 }
 
-span {
-	color: white;
+#message {
+	color: black;
 }
 
 /* Color Game Squares */
@@ -18,5 +28,13 @@ span {
 	padding-bottom: 30%;
 	float: left;
 	margin: 1.66%;
+}
+
+.selected {
+	background: blue;
+}
+
+.hide {
+	display: none;
 }
 
