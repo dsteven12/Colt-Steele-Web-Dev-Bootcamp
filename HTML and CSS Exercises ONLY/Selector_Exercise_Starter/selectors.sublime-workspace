@@ -1,0 +1,221 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.0,
+		"history":
+		[
+			"sublime.log_commands(True)",
+			"composer dumpautoload",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/movieDB/script.js",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/movieDB/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Todo List App/var todos = [];",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Function Problem Set/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Function Problem Set/script.js",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/For Loops Problem Set/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/For Loops Problem Set/script.js",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Annoy-omatic/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Annoy-omatic/script.js",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/While Loops Problem Set/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/While Loops Problem Set/script.js",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Conditionals Exercise/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Conditionals Exercise/script.js",
+		"/Users/design/Desktop/FitSom GPageSpeed Mobile.png",
+		"/Users/design/Desktop/GMetrix \"D\" Score.png",
+		"/Users/design/Desktop/FitSom GPageSpeed Desktop.png",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Age Calculator/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Age Calculator/script.js",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Javascript Stalker Exercise/script.js",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Javascript Stalker Exercise/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Intro Exercise/index.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Javascript Exercises/Intro Exercise/scripts.js",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/src/sandbox.php",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/src/support/exceptions.php",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/plugin.php",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/index.php",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/assets/vendor/composer/autoload_files.php",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/composer.json",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/src/support/sandbox.php",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/composer.php",
+		"/Users/design/Sites/labs/app/public/wp-content/plugins/ktc-starter/index copy.php",
+		"/Users/design/Documents/webdev/Udacity Javascript-and-the-DOM/index.html",
+		"/Users/design/Downloads/09_Selector_Exercise_Starter/selectors.css",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/HTML.CSS/app.css",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/forms.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/inputs.html",
+		"/Users/design/Documents/webdev/Colt Steele Web Dev Bootcamp/Readme.md",
+		"/Users/design/Documents/webdev/First Gen Pokemon Chart.html"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "selectors.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

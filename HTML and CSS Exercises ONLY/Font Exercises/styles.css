@@ -1,0 +1,17 @@
+h1 {
+	font-size: 5em;
+}
+
+body {
+	font-family: Montserrat;
+	font-size: 12px;
+}
+
+p {
+	font-size: 18px;
+}
+
+p span {
+	font-size: 1.5em;
+	font-weight: 700;
+}
