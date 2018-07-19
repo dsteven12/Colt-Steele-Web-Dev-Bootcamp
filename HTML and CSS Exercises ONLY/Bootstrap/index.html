@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap Basics</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">Bootstrap Basics</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">About <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Contact</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li>
+	      		<form class="navbar-form">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Search">
+			        </div>
+			        <button type="submit" class="btn btn-default">Submit</button>
+	      		</form>
+	      	</li>
+	        <li><a href="#">Sign Up</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Bootstrap Basics</h1>
+			<p>Playing with bootstrap can be fun! If you want to learn more about Bootstrap, click the "Bootstrap Docs" button below.</p>
+			<a href="http://getbootstrap.com" class="btn btn-info btn-s">Bootstrap Docs</a>
+			<button class="btn btn-success btn-s">Click Me</button>
+			<button class="btn btn-warning btn-s">Click Me</button>
+			<button class="btn btn-danger btn-s">Click Me</button>
+		</div>
+		<h3>Here is an inline form</h3>
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Name</label>
+		    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputEmail2">Email</label>
+		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+		  </div>
+		  <div class="checkbox">
+		    <label>
+		      <input type="checkbox"> Remember me
+		    </label>
+		  </div>
+		  <button type="submit" class="btn btn-success">Sign In</button>
+		</form>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>	
+</html>

@@ -6,7 +6,7 @@ Collection of coursework I've done from Colt Steele's Udemy Web Development cour
 
 ## Projects
 
-Color Game
+x Color Game
 To-Do List
 Patatap Clone
 YelpCamp
@@ -16,9 +16,9 @@ RESTful Blog
 
 ### HTML & CSS
 
-Pokemon Data Tables exercise
-CSS Selector exercise
-Tic Tac Toe Grid CSS exercise
+x Pokemon Data Tables exercise
+x CSS Selector exercise
+x Tic Tac Toe Grid CSS exercise
 Photo Grid CSS exercise
 Photo Grid Bootstrap exercise
 Blog Post CSS exercise
@@ -26,24 +26,24 @@ Landing Page Bootstrap exercise
 
 ### Javascript Many solutions to the exercises can be seen by opening the browser console
 
-Prompt Exercise using prompt() and console.log()
-For Loop Exercises
-While Loop Exercises
-Using Functions Problem Set
-Todo List using Arrays
-Array Problem Set
-Movie Database, practice with creating Objects
+x Prompt Exercise using prompt() and console.log()
+x For Loop Exercises
+x While Loop Exercises
+x Using Functions Problem Set
+x Todo List using Arrays
+x Array Problem Set
+x Movie Database, practice with creating Objects
 
 #### Interacting with the DOM
 
-Intro to Selectors (.getElementById, .getElementByTagName, .querySelector, etc.)
-Selector Exercise
-Adding Listeners (.addElementListener)
-Score Keeper, using .addEventListener, reviewing typecasting, selectors
+x Intro to Selectors (.getElementById, .getElementByTagName, .querySelector, etc.)
+x Selector Exercise
+x Adding Listeners (.addElementListener)
+x Score Keeper, using .addEventListener, reviewing typecasting, selectors
 
 ### jQuery
 
-Selector Exercise
+x Selector Exercise
 jQuery Methods
 
 ### Node.js Instead of using C9 as Colt recommended, I create my projects locally
