@@ -1,0 +1,10 @@
+#new-container {
+	background-color: gray;
+	width: 360px;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+
+body {
+	font-size: 18px;
+}
