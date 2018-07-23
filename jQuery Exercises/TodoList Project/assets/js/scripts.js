@@ -4,7 +4,7 @@ $(".fa-edit").on("click", function() {
 });
 
 // Adding New Todo
-$("input[type=text]").keypress(function(e) {
+$("input[type=text]").on("keypress", function(e) {
 	if(e.which === 13) {
 		var todoText = $(this).val();
 		$(this).val("");

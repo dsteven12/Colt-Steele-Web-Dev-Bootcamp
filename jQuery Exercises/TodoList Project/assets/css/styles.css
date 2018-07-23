@@ -28,14 +28,25 @@ li {
 	color: #666;
 }
 
-li:nth-child(2n) {
-	background-color: #f7f7f7;
+li span {
+	background-color: #e74c3c;
+	height: 40px;
+	width: 0;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+	color: white;
+	transition: 0.2s linear;
+	opacity: 0;
 }
-
 
 li:hover span{
 	width: 40px;
 	opacity: 1.0;
+}
+
+li:nth-child(2n) {
+	background-color: #f7f7f7;
 }
 
 input[type="text"] {
@@ -64,6 +75,7 @@ input[type="text"]:focus {
 	text-decoration: line-through;
 }
 
+
 #new-container {
 	border: 1px solid gray;
 	background: #f7f7f7;
@@ -71,6 +83,7 @@ input[type="text"]:focus {
 	margin: 100px auto;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
