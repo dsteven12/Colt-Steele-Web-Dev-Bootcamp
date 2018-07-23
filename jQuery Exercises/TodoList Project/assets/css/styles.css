@@ -33,7 +33,6 @@ li:nth-child(2n) {
 }
 
 
-
 li:hover span{
 	width: 40px;
 	opacity: 1.0;
