@@ -1,0 +1,10 @@
+.gray {
+	background-color: gray;
+	border: 1px solid black;
+	color: white;
+}
+
+.purple {
+	background-color: purple;
+	border: 1px solid black;
+}
