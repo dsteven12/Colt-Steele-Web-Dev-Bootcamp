@@ -1,0 +1,9 @@
+.red-border {
+	color: blue;
+	border: 10px solid red;
+}
+
+.purple {
+	background: purple;
+	color: white;
+}

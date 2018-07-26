@@ -1,0 +1,33 @@
+h1 {
+	font-family: Raleway;
+	font-size: 5em;
+	text-align: center;
+}
+
+body {
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+div {
+	margin: 0 auto;
+	width: 50%;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+p span:not(.line-through) {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.line-through {
+	font-style: oblique;
+	font-family: Indie Flower;
+	font-size: 1.2em;
+	text-decoration: line-through;
+}

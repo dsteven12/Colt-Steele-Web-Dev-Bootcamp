@@ -1,0 +1,42 @@
+.navbar-default {
+	background-color: #00264C;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: steelblue;
+}
+
+.jumbotron {
+	text-align: center;
+	color: #00264C;
+}
+
+.img-thumbnail {
+	width: 350px;
+	height: 365px;
+}
+
+.col-lg-4 {
+	padding: 15px 15px;
+}
+
+.initials {
+	font-family: 'Pacifico', cursive;
+}

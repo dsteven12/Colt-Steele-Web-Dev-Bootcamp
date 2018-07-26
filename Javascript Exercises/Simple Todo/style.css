@@ -1,0 +1,13 @@
+.completed {
+	text-decoration-line: line-through;
+	list-style-type: disc;
+}
+
+.text-color-change {
+	color: blue;
+}
+
+li {
+	list-style-type: circle;
+}
+

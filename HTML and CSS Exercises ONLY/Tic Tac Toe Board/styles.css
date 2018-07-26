@@ -1,0 +1,32 @@
+h1 {
+	font-family: Raleway;
+	font-size: 5em;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+body {
+	font-family: Montserrat;
+	font-size: 12px;
+	font-weight: 200;
+}
+
+table {
+	width: 50%;
+	margin: 0 auto;
+}
+
+td {
+	height: 100px;
+	width: 100px;
+}
+
+.horizontal-lines {
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+.vertical-lines {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}

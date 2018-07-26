@@ -1,0 +1,89 @@
+body {
+	font-size: 18px;
+	background: #FEAC5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(90deg, #2980b9 10%, #FFFFFF 90%);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(90deg, #2980b9 10%, #FFFFFF 90%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+	background-color: #2980b9;
+	color: #fff;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	background-color: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+li span {
+	background-color: #e74c3c;
+	height: 40px;
+	width: 0;
+	display: inline-block;
+	margin-right: 10px;
+	text-align: center;
+	color: white;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
+
+li:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+input[type="text"] {
+	width: 100%;
+	background-color: #f7f7f7;
+	border: 3px solid rgba(0, 0, 0, 0);
+	padding: 13px 13px 13px 20px;
+	height: 50px;
+	line-height: 50px;
+	color: #2980b9;
+}
+
+input[type="text"]:focus {
+	background-color: #fff;
+	border: 3px solid #2980b9;
+	outline: none;
+
+}
+
+.fa-edit {
+	float: right;
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
+}
+
+
+#new-container {
+	border: 1px solid gray;
+	background: #f7f7f7;
+	width: 360px;
+	margin: 100px auto;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
