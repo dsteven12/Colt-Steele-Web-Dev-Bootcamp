@@ -1,0 +1,11 @@
+<% include partials/header.ejs %>
+<h1>Friends List</h1>
+<% for(var i = 0; i < friends.length; i++) { %>
+    <li><%= friends[i] %></li>
+<% } %>
+<br>
+<form action="/addFriend" method="POST">
+    <input type="text" name="newFriend" placeholder="name">
+    <button>I made a new friend!</button>
+</form>
+<% include partials/footer.ejs %>
