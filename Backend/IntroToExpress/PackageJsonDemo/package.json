@@ -1,0 +1,16 @@
+{
+  "name": "package-json-demo",
+  "version": "1.0.0",
+  "description": "Simple package.json demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darryl Lardizabal",
+  "license": "ISC",
+  "dependencies": {
+    "cat-me": "^1.0.3",
+    "express": "^4.16.3",
+    "knock-knock-jokes": "^1.7.0"
+  }
+}
