@@ -1,3 +1,4 @@
+<% include partials/header.ejs %>
 <h1>The Posts Page</h1> 
 <hr>
 
@@ -8,5 +9,7 @@
 
 <h3>Comments:</h3>
 <% comments.forEach(function(comment) { %>
-    <li><em><%= comment.author %></em> says: <%= comment.message %></li>
+    <li><em><%= comment.author %> says</em>: "<%= comment.message %>"</li>
 <% }); %>
+
+<% include partials/footer.ejs %>

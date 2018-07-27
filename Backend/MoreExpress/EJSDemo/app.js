@@ -1,14 +1,17 @@
 var express = require("express");
 var app = express();
 
+app.use(express.static("public"));
+app.set("view engine", "ejs");
+
 app.get("/", function(req, res) {
     // res.send("Welcome to the Home Page!");
-    res.render("home.ejs");
+    res.render("home");
 });
 
 app.get("/fallinlovewith/:thing".toLowerCase(), function(req, res) {
     var thing = req.params.thing;
-    res.render("love.ejs", {thingVar: thing});
+    res.render("love", {thingVar: thing});
 });
 
 app.get("/posts", function(req, res) {
@@ -24,7 +27,7 @@ app.get("/posts", function(req, res) {
         {author: "Penny", message: "I can't believe you pulled this off!"},
     ];
     
-    res.render("posts.ejs", {posts: posts, comments: comments});
+    res.render("posts", {posts: posts, comments: comments});
 });
 
 
