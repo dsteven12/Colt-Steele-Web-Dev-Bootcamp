@@ -1,0 +1,14 @@
+{
+  "name": "expressassignment",
+  "version": "1.0.0",
+  "description": "creating a package.json for Colt's assignment.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darryl Lardizabal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
