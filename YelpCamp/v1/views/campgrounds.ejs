@@ -1,0 +1,8 @@
+<h1>Camp Grounds</h1>
+<h2>Here's a list of the available Camp Grounds:</h2>
+<ul>
+    <% campgrounds.forEach(function(campground) { %>
+        <h3><%= campground["name"] %></h3>
+        <p><img src="<%= campground["image"] %>"></p>
+    <% }); %>
+</ul>
