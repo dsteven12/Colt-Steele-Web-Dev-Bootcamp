@@ -1,6 +1,16 @@
 var express = require("express");
 var app = express();
+var bodyParser = require("body-parser");
 
+var campgrounds = [
+    {name: "Salmon Creek", image: "https://images.pexels.com/photos/587976/pexels-photo-587976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Trout Creek", image: "https://images.pexels.com/photos/388303/pexels-photo-388303.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Keep Creek", image: "https://images.pexels.com/photos/6757/feet-morning-adventure-camping.jpg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Milk Creek", image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Billy Creek", image: "https://images.pexels.com/photos/699558/pexels-photo-699558.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+];
+
+app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
@@ -8,14 +18,22 @@ app.get("/", function(req, res) {
 });
 
 app.get("/campgrounds", function(req, res) {
-    var campgrounds = [
-        {name: "Salmon Creek", image: "https://pixabay.com/get/e03db50f2af41c22d2524518b7444795ea76e5d004b0144297f9c578a0e8b0_340.jpg"},
-        {name: "Trout Creek", image: "https://pixabay.com/get/e837b1072af4003ed1584d05fb1d4e97e07ee3d21cac104496f2c87da6eab0bd_340.jpg"},
-        {name: "Keep Creek", image: "https://pixabay.com/get/e83db7082af3043ed1584d05fb1d4e97e07ee3d21cac104496f2c87da6eab0bd_340.jpg"},
-        {name: "Milk Creek", image: "https://pixabay.com/get/e83db50a21f4073ed1584d05fb1d4e97e07ee3d21cac104496f2c87da6eab0bd_340.jpg"},
-        {name: "Billy Creek", image: "https://pixabay.com/get/e834b5062cf4033ed1584d05fb1d4e97e07ee3d21cac104496f2c87da6eab0bd_340.jpg"},
-    ];
+
     res.render("campgrounds", {campgrounds: campgrounds});
+});
+
+app.get("/campgrounds/new", function(req, res) {
+   res.render("new.ejs"); 
+});
+
+app.post("/campgrounds", function(req, res) {
+   // get data from form and add to campgrounds array
+   var name = req.body.name;
+   var image = req.body.image;
+   var newCampground = {name: name, image: image};
+   campgrounds.push(newCampground);
+   // redirect back to campgrounds page
+   res.redirect("/campgrounds");
 });
 
 app.listen(process.env.PORT, process.env.IP, function() {
