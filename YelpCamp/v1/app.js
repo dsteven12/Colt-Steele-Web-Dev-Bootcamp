@@ -7,7 +7,11 @@ var campgrounds = [
     {name: "Trout Creek", image: "https://images.pexels.com/photos/388303/pexels-photo-388303.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
     {name: "Keep Creek", image: "https://images.pexels.com/photos/6757/feet-morning-adventure-camping.jpg?auto=compress&cs=tinysrgb&h=650&w=940"},
     {name: "Milk Creek", image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-    {name: "Billy Creek", image: "https://images.pexels.com/photos/699558/pexels-photo-699558.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Salmon Creek", image: "https://images.pexels.com/photos/587976/pexels-photo-587976.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Trout Creek", image: "https://images.pexels.com/photos/388303/pexels-photo-388303.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Keep Creek", image: "https://images.pexels.com/photos/6757/feet-morning-adventure-camping.jpg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Milk Creek", image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+    {name: "Milk Creek", image: "https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
 ];
 
 app.use(bodyParser.urlencoded({extended:true}));
