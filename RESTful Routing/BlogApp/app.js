@@ -113,6 +113,21 @@ app.put("/blogs/:id", function(req, res) {
     });
 });
 
+// DESTROY Route
+app.delete("/blogs/:id", function(req, res){ 
+     Blog.findById(req.params.id, function(err, blog){      
+       if(err){           
+            console.log("=============");
+            console.log("OH NO, ERROR!");
+            console.log("=============");
+            console.log(err);      
+        } else {           
+            blog.remove();           
+            res.redirect("/blogs");       
+        }   
+    }); 
+});
+
 app.listen(process.env.PORT, process.env.IP, function() {
     console.log("==================================");
     console.log("The BlogApp Server has Started!!!");
