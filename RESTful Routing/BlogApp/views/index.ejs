@@ -2,7 +2,7 @@
 <h1>Blog Page</h1>
 <% blogs.forEach(function(blog) { %>
     <h2><%= blog.title %></h2>
-    <p><img src="<%= blog.image %>"></p>
+    <p><img src="<%= blog.image %>" style="width:450px; height: 375px;"></p>
     <p><%= blog.created %></p>
     <p><%= blog.body %></p>
 <% }); %>
