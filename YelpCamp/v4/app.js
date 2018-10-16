@@ -25,7 +25,7 @@ app.get("/campgrounds", function(req, res) {
             console.log("=============");
             console.log(err);
         } else {
-            res.render("index", {campgrounds: campgrounds});
+            res.render("campgrounds/index", {campgrounds: campgrounds});
         }        
     });
 });
@@ -54,12 +54,12 @@ app.post("/campgrounds", function(req, res) {
 
 // NEW - Shows form to add new campgrounds
 app.get("/campgrounds/new", function(req, res) {
-    res.render("new.ejs"); 
+    res.render("campgrounds/new"); 
 });
 
 // NEW - Shows form to add new comments
 app.get("/campgrounds/newComment", function(req, res) {
-    res.render("newComment.ejs");
+    res.render("campgrounds/new");
 });
 
 // SHOW - Shows info about campgrounds
@@ -73,7 +73,7 @@ app.get("/campgrounds/:id", function(req, res) {
             console.log(err);
        } else {
             // Render show template with that campground
-            res.render("show", {campground: foundCampground});
+            res.render("campgrounds/show", {campground: foundCampground});
        }        
     });
 });
